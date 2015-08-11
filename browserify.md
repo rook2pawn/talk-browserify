@@ -1,4 +1,7 @@
-Check the slides presentation
+Open the slides presentation in your browser
+============================================
+
+In your browser, follow the slides/index.html
 
 
 browserify example
