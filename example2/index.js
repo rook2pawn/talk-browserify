@@ -7,6 +7,5 @@ $(window).ready(function() {
 
   console.log(x)
 
-  document.getElementById('mydiv').innerHTML = 
-  JSON.stringify(x)
+  $('div#mydiv').html(JSON.stringify(x))
 })
