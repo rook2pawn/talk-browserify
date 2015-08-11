@@ -1,0 +1,22 @@
+{
+  "name": "talk-browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build" : "node_modules/browserify/bin/cmd.js index.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rook2pawn/talk-browserify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rook2pawn/talk-browserify/issues"
+  },
+  "homepage": "https://github.com/rook2pawn/talk-browserify#readme",
+  "dependencies": {
+    "browserify": "^11.0.1"
+  }
+}
