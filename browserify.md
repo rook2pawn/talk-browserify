@@ -1,3 +1,6 @@
+Check the slides presentation
+
+
 browserify example
 ==================
 

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Slide Transitions</title>
+
+		<link rel="stylesheet" href="reveal.css">
+		<link rel="stylesheet" href="theme/white.css" id="theme">
+		<style type="text/css" media="screen">
+      span.colored {
+        background-color:#FF6666;
+      }
+      span.em {
+        font-style:italic;
+        text-decoration:underline;
+      }
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-transition='zoom'>
+					<h1>Browserify</h1>
+          What is it?
+          A way to use <span class='em'>requires</span>
+          In your client side code
+				</section>
+
+				<section>
+          <h1>We can now</h1>
+          <ul>
+            <li class='fragment'>use <span class='em'>thousands upon thousands of free available modules in npm</span> in our client</li>
+            <li class='fragment'>use <span class='em'>a large number of core node modules like querystring</span> in our client</li>
+            <li class='fragment'>use <span class='em'>Our own files and simply require them in!</span> in our client</li>
+          </ul>
+            
+				</section>
+
+				<section data-transition="zoom">
+					<h3>Lets use a free open source module we find on npmjs</h3>
+          <ul>
+              <li class='fragment'>For example, </li>
+              <li class='fragment'>async</li>
+              <li class='fragment'>and many many more</li>
+              <li class='fragment'>most usable in your client</li>
+          </ul>
+				</section>
+
+				<section data-transition="zoom-in fade-out">
+					<h3>How we do it</h3>
+          <div class='fragment'>
+            <span class='em'>Some HTML</span>
+            <p>We just include a &lt;script src='bundle.js'&gt;&lt;/script&gt; 
+          </div>
+          <div class='fragment'>
+            <span class='em'>Some Javascript index.js</span>
+            <pre>
+              var async = require('async')
+              async.series([
+                function(done) {
+                },
+                function(done) {
+                }
+              ]) 
+            </pre>
+          </div>
+          <div class='fragment'>
+            <span class='em'>we turn index.js INTO bundle.js this way</span>
+          <p><span class='colored'>browserify index.js -o bundle.js</span>
+          </div>
+				</section>
+
+				<section>
+					<h3>Default</h3>
+				</section>
+
+				<section data-transition="convex">
+					<h3>data-transition: convex</h3>
+				</section>
+
+				<section data-transition="convex-in concave-out">
+					<h3>data-transition: convex-in concave-out</h3>
+				</section>
+
+				<section>
+					<section data-transition="zoom">
+						<h3>Default</h3>
+					</section>
+					<section data-transition="concave">
+						<h3>data-transition: concave</h3>
+					</section>
+					<section data-transition="convex-in fade-out">
+						<h3>data-transition: convex-in fade-out</h3>
+					</section>
+					<section>
+						<h3>Default</h3>
+					</section>
+				</section>
+
+				<section data-transition="none">
+					<h3>data-transition: none</h3>
+				</section>
+
+				<section>
+					<h3>Default</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="head.min.js"></script>
+		<script src="reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				center: true,
+				history: true,
+
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
+</html>
