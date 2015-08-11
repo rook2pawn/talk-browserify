@@ -66,14 +66,14 @@
 				</section>
 
 				<section data-transition="zoom-in fade-out">
+          <section>
 					<h3>How we do it</h3>
-          <div class='fragment'>
             <span class='em'>Some HTML</span>
-            <p>We just include a &lt;script src='bundle.js'&gt;&lt;/script&gt; 
-          </div>
-          <div class='fragment'>
+<p>&lt;script src='bundle.js' type='text/javascript'&gt;&lt;/script&gt;<br/>
+          </section>
+          <section> 
             <span class='em'>Some Javascript index.js</span>
-            <pre>
+            <pre><code data-trim>
               var async = require('async')
               async.series([
                 function(done) {
@@ -81,14 +81,40 @@
                 function(done) {
                 }
               ]) 
-            </pre>
-          </div>
-          <div class='fragment'>
-            <span class='em'>we turn index.js INTO bundle.js this way</span>
-          <p><span class='colored'>browserify index.js -o bundle.js</span>
-          </div>
+            </code></pre>
+          </section>
+          <section>
+              <span class='em'>we turn index.js INTO bundle.js this way</span>
+            <p><span class='colored'>browserify index.js -o bundle.js</span>
+          </section>
 				</section>
-
+				<section data-transition="fade-in fade-out">
+          <h3>Using our own 'module' like an npm module</h3>
+          <ul>
+            <li class='fragment'>We can use our own code and require it</li>
+            <li class='fragment'>Just like a published module</li>
+            <li class='fragment'>To make your code more organized with small files of exact functionality</li>
+          </ul>
+				</section>
+				<section data-transition="slide-in slide-out">
+          <section>
+          <h3>Example for our own code</h3>
+            Say we want to write our own library, <span class='em'>lib.js</span>
+            <pre><code data-trim>
+              exports.myfunction = function(text) {
+                return text.toUpperCase()
+              }
+            </code></pre>
+          </section>
+          <section>
+          <h3>Now we can include lib.js</h3>
+            <pre><code data-trim>
+              var mylib = require('./lib.js')
+              console.log(mylib.myfunction("cyberwizard")) 
+              // outputs -&gt; "CYBERWIZARD"
+            </code></pre>
+          </section>
+				</section>
 			</div>
 
 		</div>
