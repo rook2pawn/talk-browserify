@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "node_modules/browserify/bin/cmd.js index.js -o bundle.js"
+    "build" : "node_modules/browserify/bin/cmd.js example1/index.js -o example1/bundle.js"
   },
   "repository": {
     "type": "git",
