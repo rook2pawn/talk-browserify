@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "example1": "node_modules/browserify/bin/cmd.js example1/index.js -o example1/bundle.js",
-    "example2": "node_modules/browserify/bin/cmd.js example2/index.js -o example2/bundle.js"
+    "example2": "node_modules/browserify/bin/cmd.js example2/index.js -o example2/bundle.js",
     "example-together": "node_modules/browserify/bin/cmd.js example-together/index.js -o example-together/bundle.js"
   },
   "repository": {
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/rook2pawn/talk-browserify#readme",
   "dependencies": {
-    "browserify": "^11.0.1"
+    "browserify": "^11.0.1",
+    "ecstatic": "^2.1.0",
+    "router-middleware": "^2.1.3"
   }
 }
